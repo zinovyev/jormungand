@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.17, for osx10.12 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.18, for osx10.12 (x86_64)
 --
--- Host: localhost    Database: sharetribe_striper_development
+-- Host: localhost    Database: sharetribe_development
 -- ------------------------------------------------------
--- Server version	5.7.16
+-- Server version	5.7.18
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -1448,7 +1448,7 @@ CREATE TABLE `shipping_addresses` (
   `updated_at` datetime NOT NULL,
   `country_code` varchar(8) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `index_shipping_addresses_on_transaction_id` (`transaction_id`)
+  KEY `index_shipping_addresses_on_transaction_id` (`transaction_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -1669,7 +1669,7 @@ CREATE TABLE `transactions` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-18 23:39:47
+-- Dump completed on 2017-09-07 22:17:29
 INSERT INTO schema_migrations (version) VALUES ('20080806070738');
 
 INSERT INTO schema_migrations (version) VALUES ('20080807071903');

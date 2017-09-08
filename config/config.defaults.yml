@@ -269,7 +269,7 @@ default: &default_settings
 
   # External plan service connection
   # The connection details hosted Sharetribe uses to connect to external subscription management system.
-  external_plan_service_in_use: false
+  external_plan_service_in_use: true
   external_plan_service_secret:
   external_plan_service_login_url:
 
@@ -354,7 +354,7 @@ default: &default_settings
   # The hosted version stores the landing page data in the database but for single
   # marketplace OS installations the database doesn't bring any benifits. That's why
   # the static version is used instead of database in OS installations.
-  clp_static_enabled: false
+  clp_static_enabled: true
 
   # Landing page is cached heavily.
   #
