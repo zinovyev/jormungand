@@ -2,9 +2,9 @@ development:
     adapter: mysql2
     database: sharetribe_development
     encoding: utf8
-    username: root
-    password: Oxylostech123
-    host: localhost
+    username: dev
+    password: $t*rD3@L
+    host: 104.154.147.119
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -13,25 +13,25 @@ test: &test
     adapter: mysql2
     database: sharetribe_test
     encoding: utf8
-    username: root
-    password: Oxylostech123
+    username: # ADD DATABASE USERNAME
+    password: # ADD DATABASE PASSWORD
     host: localhost
 
 staging:
     adapter: mysql2
     database: sharetribe_staging
     encoding: utf8
-    username: root
-    password: Oxylostech123
+    username: # ADD DATABASE USERNAME
+    password: # ADD DATABASE PASSWORD
     host: localhost
 
 production:
     adapter: mysql2
-    database: sharetribe_production
+    database: sharetribe_development
     encoding: utf8
-    username: root
-    password: Oxylostech123
-    host: localhost
+    username: dev
+    password: $t*rD3@L
+    host: 104.154.147.119
 
 cucumber:
   <<: *test
