@@ -47,161 +47,77 @@ module CustomLandingPage
       "id": "video",
       "kind": "video",
       "variation": "youtube",
-      "youtube_video_id": "UffchBUUIoI",
-      "width": "1280",
-      "height": "720",
-      "text": "Video section can contain one Youtube video. Click to watch!"
+      "youtube_video_id": "3g4expkJbd0",
+      "width": "854",
+      "height": "480"
     },
-    {
-      "id": "single_info_without_background_and_cta",
-      "kind": "info",
-      "variation": "single_column",
-      "title": "Single column info section without background image and call to action button",
-      "paragraph": "This is a single column info section without background image and call to action button."
-    },
-    {
-      "id": "markdown_support",
-      "kind": "info",
-      "variation": "single_column",
-      "title": "Limited Markdown support",
-      "paragraph": "Text paragraphs can contain Markdown markup. Limited subset of Markdown syntax blocks are allowed. Allowed blocks are *italic*, **bold**, ***bold+italic***, ~~strike through~~, _underline_ and [links](https://www.sharetribe.com).  \\nLine breaks and...\\n\\n...new paragraphs are also supported"
-    },
-    {
-      "id": "single_info_without_cta",
-      "kind": "info",
-      "variation": "single_column",
-      "title": "Single column info section without call to action button",
-      "paragraph": "This is a single column info section without background image and call to action button.",
-      "background_image": {"type": "assets", "id": "default_hero_background"}
-    },
-    {
-      "id": "single_info_with_background_and_cta",
-      "kind": "info",
-      "variation": "single_column",
-      "title": "Single column info section with background image and call to action button",
-      "paragraph": "This is a single column info section with background image and call to action button.",
-      "button_color": {"type": "marketplace_data", "id": "primary_color"},
-      "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
-      "button_title": "Go to sharetribe.com",
-      "button_path": {"value": "https://www.sharetribe.com"},
-      "background_image": {"type": "assets", "id": "default_hero_background"},
-      "background_image_variation": "dark"
-    },
-    {
-      "id": "single_info_with_cta",
-      "kind": "info",
-      "variation": "single_column",
-      "title": "Single column info section with call to action button",
-      "paragraph": "This is a single column info section with call to action button.",
-      "button_color": {"type": "marketplace_data", "id": "primary_color"},
-      "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
-      "button_title": "Contact us",
-      "button_path": {"type": "path", "id": "contact_us"}
-    },
-    {
-      "id": "single_info_with_background_color_and_cta",
-      "kind": "info",
-      "variation": "single_column",
-      "title": "Single column info section with background color and call to action button",
-      "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Nulla vitae elit libero.",
-      "button_color": {"type": "marketplace_data", "id": "primary_color"},
-      "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
-      "button_title": "About",
-      "button_path": {"type": "path", "id" :"about"},
-      "background_color": [166, 76, 94]
-    },
-    {
+	{
       "id": "two_column_info_with_icons_and_buttons",
       "kind": "info",
       "variation": "multi_column",
-      "title": "Two column info section with icons and buttons",
+      "title": "A place where you can buy or sell your tickets easily",
       "button_color": {"type": "marketplace_data", "id": "primary_color"},
       "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
       "icon_color": {"type": "marketplace_data", "id": "primary_color"},
       "columns": [
         {
           "icon": "grape",
-          "title": "Column 1",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel.\\n\\nParagraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel.",
-          "button_title": "Go to sharetribe.com",
-          "button_path": {"value": "https://www.sharetribe.com"}
+          "title": "Seller",
+          "paragraph": "If you are a merchant distributing tickets or an individual finding buyer for your last minute ticket, this platform is designed for easy transaction and collection with a targeted group of audience looking to buy from you."
         },
         {
           "icon": "watering-can",
-          "title": "Column 2",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel.",
-          "button_title": "Go to sharetribe.com",
-          "button_path": {"value": "https://www.sharetribe.com"}
+          "title": "Buyer",
+          "paragraph": "If you are an individual looking for your favorite event ticket or looking tickets that are sold out, look no further as our platform is able to cater to your specific needs."
         }
       ]
     },
     {
-      "id": "two_column_info_without_icons_and_buttons",
+      "id": "single_info_without_cta",
       "kind": "info",
-      "variation": "multi_column",
-      "title": "Two column info section without icons and buttons",
-      "columns": [
-        {
-          "title": "Column 1",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel.\\n\\nParagraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel."
-        },
-        {
-          "title": "Column 2",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel."
-        }
-      ]
+      "variation": "single_column",
+      "title": "Categories",
+      "paragraph": "Concert | Movie | Play | Threatre | Comedy Show | Seminar",
+      "background_image": {"type": "assets", "id": "movie_ticket_background"}
     },
-    {
+	{
       "id": "three_column_info_with_icons_and_buttons",
       "kind": "info",
       "variation": "multi_column",
-      "title": "Three column info with icons and buttons",
+      "title": "Unique Features For Your Seamless Experience",
       "button_color": {"type": "marketplace_data", "id": "primary_color"},
       "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
       "icon_color": {"type": "marketplace_data", "id": "primary_color"},
       "columns": [
         {
-          "title": "Column 1",
+          "title": "Fast & Easy",
           "icon": "quill",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel.",
-          "button_title": "Go to sharetribe.com",
-          "button_path": {"value": "https://www.sharetribe.com"}
+          "paragraph": "Easy registration, fast search to find your favorite ticket and seamless transaction when dealing tickets. "
         },
         {
-          "title": "Column 2",
+          "title": "Nearby Transaction",
           "icon": "piggy-bank",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel.",
-          "button_title": "Go to sharetribe.com",
-          "button_path": {"value": "https://www.sharetribe.com"}
+          "paragraph": "Location based transaction defined by seller.  Able to meet up at screening venue or deal at places near you."
         },
         {
-          "title": "Column 3",
+          "title": "Secured",
           "icon": "globe-1",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel.",
-          "button_title": "Go to sharetribe.com",
-          "button_path": {"value": "https://www.sharetribe.com"}
+          "paragraph": "Our platform is secured with SSL certificate and there is a 100% buyer protection to ensure 100% buyer satisfaction."
         }
       ]
     },
-    {
-      "id": "three_column_info_without_icons_and_buttons",
+	{
+      "id": "single_info_with_background_and_cta",
       "kind": "info",
-      "variation": "multi_column",
-      "title": "Three column info without icons and buttons",
-      "columns": [
-        {
-          "title": "Column 1",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel."
-        },
-        {
-          "title": "Column 2",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel."
-        },
-        {
-          "title": "Column 3",
-          "paragraph": "Paragraph. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel."
-        }
-      ]
+      "variation": "single_column",
+      "title": "How to Start",
+      "paragraph": "1.Register Your Profile |     2. List Ticket Or Search Your Event Title  |     3. Chat, Meet Up & Deal",
+      "button_color": {"type": "marketplace_data", "id": "primary_color"},
+      "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
+      "button_title": "Go to Registration",
+      "button_path": {"value": "http://104.197.46.63:3000/en/signup"},
+      "background_image": {"type": "assets", "id": "default_hero_background"},
+      "background_image_variation": "dark"
     },
     {
         "id": "categories",
@@ -231,8 +147,8 @@ module CustomLandingPage
     {
         "id": "listings",
         "kind": "listings",
-        "title": "Featured listings section",
-        "paragraph": "PLEASE NOTE: This section is NOT ENABLED by default. To enable this section, replace listing IDs with real IDs and add the section to the 'composition'. This section contains 3 featured listings",
+        "title": "Featured Listings",
+        "paragraph": "Recommended",
         "button_color": {"type": "marketplace_data", "id": "primary_color"},
         "button_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
         "button_title": "Browse all listings",
@@ -243,13 +159,13 @@ module CustomLandingPage
         "author_name_color_hover": {"type": "marketplace_data", "id": "primary_color"},
         "listings": [
             {
-                "listing": { "type": "listing", "id": 99999 }
+                "listing": { "type": "listing", "id": 15 }
             },
             {
-                "listing": { "type": "listing", "id": 99999 }
+                "listing": { "type": "listing", "id": 10 }
             },
             {
-                "listing": { "type": "listing", "id": 99999 }
+                "listing": { "type": "listing", "id": 13 }
             }
         ]
     },
@@ -266,39 +182,35 @@ module CustomLandingPage
         {"label": "Terms", "href": {"type": "path", "id": "terms"}},
         {"label": "Privary", "href": {"type": "path", "id": "privacy"}},
         {"label": "Invite new members", "href": {"type": "path", "id": "new_invitation"}},
-        {"label": "Sharetribe", "href": {"value": "https://www.sharetribe.com"}}
+        {"label": "StarDeal", "href": {"value": "https://www.StarDeal.com"}}
       ],
       "social": [
-        {"service": "facebook", "url": "https://www.facebook.com/Sharetribe/"},
-        {"service": "twitter", "url": "https://twitter.com/sharetribe"},
+        {"service": "facebook", "url": "https://www.facebook.com/EzyDeal2U/"},
+        {"service": "twitter", "url": "https://twitter.com/StarDeal"},
         {"service": "instagram", "url": "https://www.instagram.com/"},
-        {"service": "youtube", "url": "https://www.youtube.com/channel/UCtefWVq2uu4pHXaIsHlBFnw"},
-        {"service": "googleplus", "url": "https://plus.google.com/114869130265262677354/"},
-        {"service": "linkedin", "url": "https://www.linkedin.com/company/2626583"},
+        {"service": "youtube", "url": "https://tinyurl.com/yab4w6vh"},
+        {"service": "googleplus", "url": "https://www.facebook.com/StarDeal/"},
+        {"service": "linkedin", "url": "https://www.facebook.com/StarDeal/"},
         {"service": "pinterest", "url": "https://www.pinterest.com/"}
       ],
-      "copyright": "Copyright Marketplace Ltd 2016"
+      "copyright": "Copyright EZYDEAL2U Marketplace Maker 2017"
     }
   ],
 
   "composition": [
     { "section": {"type": "sections", "id": "hero"}},
-    { "section": {"type": "sections", "id": "markdown_support"}},
-    { "section": {"type": "sections", "id": "single_info_without_background_and_cta"}},
-    { "section": {"type": "sections", "id": "single_info_without_cta"}},
-    { "section": {"type": "sections", "id": "single_info_with_cta"}},
-    { "section": {"type": "sections", "id": "single_info_with_background_and_cta"}},
-    { "section": {"type": "sections", "id": "single_info_with_background_color_and_cta"}},
     { "section": {"type": "sections", "id": "two_column_info_with_icons_and_buttons"}},
-    { "section": {"type": "sections", "id": "two_column_info_without_icons_and_buttons"}},
+    { "section": {"type": "sections", "id": "single_info_without_cta"}},
     { "section": {"type": "sections", "id": "three_column_info_with_icons_and_buttons"}},
-    { "section": {"type": "sections", "id": "three_column_info_without_icons_and_buttons"}},
+    { "section": {"type": "sections", "id": "single_info_with_background_and_cta"}},
+	{ "section": {"type": "sections", "id": "listings"}},
     { "section": {"type": "sections", "id": "video"}},
     { "section": {"type": "sections", "id": "footer"}}
   ],
 
   "assets": [
-    { "id": "default_hero_background", "src": "default_hero_background.jpg", "content_type": "image/jpeg" }
+    { "id": "default_hero_background", "src": "default_hero_background.jpg", "content_type": "image/jpeg" },
+	{ "id": "movie_ticket_background", "src": "movie night.png", "content_type": "image/png" }
   ]
 }
 JSON
@@ -450,13 +362,13 @@ JSON
             "author_name_color_hover": {"type": "marketplace_data", "id": "primary_color"},
             "listings": [
                 {
-                    "listing": { "type": "listing", "id": 99999 }
+                    "listing": { "type": "listing", "id": 15 }
                 },
                 {
-                    "listing": { "type": "listing", "id": 99999 }
+                    "listing": { "type": "listing", "id": 10 }
                 },
                 {
-                    "listing": { "type": "listing", "id": 99999 }
+                    "listing": { "type": "listing", "id": 13 }
                 }
             ]
         },
@@ -464,9 +376,9 @@ JSON
             "id": "video",
             "kind": "video",
             "variation": "youtube",
-            "youtube_video_id": "UffchBUUIoI",
-            "width": "1280",
-            "height": "720"
+            "youtube_video_id": "3g4expkJbd0",
+			"width": "854",
+			"height": "480"
         },
         {
             "id": "footer",
@@ -476,7 +388,7 @@ JSON
             "social_media_icon_color_hover": {"type": "marketplace_data", "id": "primary_color_darken"},
             "links": [
                 {"label": "About", "href": {"type": "path", "id": "about"}},
-                {"label": "Example Link", "href": {"value": "https://www.sharetribe.com"}},
+                {"label": "Example Link", "href": {"value": "https://www.EZYDEAL2U.com"}},
                 {"label": "Invite new members", "href": {"type": "path", "id": "new_invitation"}},
                 {"label": "Contact us", "href": {"type": "path", "id": "contact_us"}}
             ],
@@ -485,7 +397,7 @@ JSON
                 {"service": "twitter", "url": "https://www.twitter.com/CHANGEME"},
                 {"service": "instagram", "url": "https://www.instagram.com/CHANGEME"}
             ],
-            "copyright": "This website is powered by Sharetribe marketplace platform."
+            "copyright": "This website is powered by EZYDEAL2U marketplace Maker."
         }
     ],
     "composition": [
@@ -503,6 +415,7 @@ JSON
         {"id": "category1_background_image", "src": "example_bg_lighter.jpg", "content_type": "image/jpeg"},
         {"id": "category2_background_image", "src": "example_bg_lighter.jpg", "content_type": "image/jpeg"},
         {"id": "category3_background_image", "src": "example_bg_lighter.jpg", "content_type": "image/jpeg"}
+		
     ]
 }
 
