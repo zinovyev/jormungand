@@ -436,7 +436,7 @@ default: &default_settings
 
 production: &production_settings
   <<: *default_settings
-
+  secret_key_base: "fffd9656698ae5331f9beaefe06274df5f2640a947d4de9ab261a2624c4545a2708b8393449fa0df8de3985110e5f53b3f4bcb2455dbe0b7d1de60614c0071a9"
   eager_load: true
 
   log_level: INFO
