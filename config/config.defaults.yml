@@ -436,7 +436,7 @@ default: &default_settings
 
 production: &production_settings
   <<: *default_settings
-  secret_key_base: "fffd9656698ae5331f9beaefe06274df5f2640a947d4de9ab261a2624c4545a2708b8393449fa0df8de3985110e5f53b3f4bcb2455dbe0b7d1de60614c0071a9"
+
   eager_load: true
 
   log_level: INFO
@@ -455,8 +455,6 @@ development:
 
   # Skip email confirmation
   skip_email_confirmation: true
-
-  secret_key_base: "fd1af50b59b5e27776941b3205f92aca0f704c2252225cf93e3d97ae53f4774d25736cbdb19c1580839a2f68e15009209227e966003f53932c1bcc5d65616948"
 
   log_level: DEBUG
 
@@ -505,7 +503,5 @@ test:
 
   # easier to run tests without SSL
   always_use_ssl: false
-
-  secret_key_base: "8fb582997a5e3ba2efb57c020dd01aa81647674dbb1aee6efcf30d75ec442e3a48832379e1ebaae2801782075efbf02ebed797a1df3f2b3ad87ec3faf37ccc64"
 
   log_level: DEBUG
