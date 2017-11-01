@@ -523,10 +523,10 @@ module ApplicationHelper
     ]
 
     payment_type = MarketplaceService::Community::Query.payment_type(@current_community.id)
-    
+
     if payment_type.present?
       path = payment_settings_path(payment_type, @current_user)
-      
+
       links << {
         :id => "settings-tab-payments",
         :text => t("layouts.settings.payments"),
@@ -682,5 +682,16 @@ module ApplicationHelper
     else
       content_for :extra_javascript do js end
     end
+  end
+
+  def get_valid_phone_email_address (content)
+    content.scan(Regexp.union(/\d{2}[\d \-+()]+$|(?<=[ ])[\d \-+()]+{5,}/, /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i, /\A(?:\+?\d{1,3}\s*-?)?\(?(?:\d{3})?\)?[- ]?\d{3}[- ]?\d{4}\z/))
+  end
+
+  def masked_valid_phone_email_address (content)
+    get_valid_phone_email_address(content).each do |m|
+      m =~ Devise.email_regexp ? content.gsub!(m, t('listings.comment.masked_email_address')) : content.gsub!(m, t('listings.comment.masked_phone_number'))
+    end
+    content
   end
 end

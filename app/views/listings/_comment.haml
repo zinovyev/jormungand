@@ -8,4 +8,8 @@
     %small= link_to t('listings.comment.delete'), listing_comment_path(:listing_id => comment.listing.id, :id => comment.id), {method: :delete, data: { confirm: t('listings.comment.are_you_sure') }, :remote => :true}
   .comment-content
     - text_with_line_breaks do
-      = comment.content
+      .content-comments
+        - new_content = comment.content
+        - unless @current_user && current_user?(comment.author)
+          - new_content = masked_valid_phone_email_address(new_content)
+        = new_content.html_safe
