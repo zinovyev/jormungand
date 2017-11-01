@@ -1391,6 +1391,8 @@ en:
       send_private_message: "Send private message to %{person}"
       delete: delete
       are_you_sure: "Are you sure you want to delete the comment?"
+      masked_email_address: "<span class='masked-text'>[masked email address]</span>"
+      masked_phone_number: "<span class='masked-text'>[masked phone number]</span>"
     comment_form:
       ask_a_question: "Comment on the listing or ask for more details. All the other users will be able to see your comment."
       log_in: "log in"
