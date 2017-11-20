@@ -1,5 +1,3 @@
 config/*.sphinx.conf
-config/database.yml
-config/config.yml
 tmp/
 public/javascripts/translations.js
