@@ -1,10 +1,10 @@
-default: &default_settings
+efault: &default_settings
 
   # Fill here the domain where you will be running Sharetribe.
   # If you are running on localhost, you can write here "lvh.me:3000" (which redirects to localhost port 3000)
   # The community subdomains will be added to this top domain.
   # NOTE: Do not include http(s) here, or subdomains, just the top level domain, like "sharetribe.com" for example
-  domain: "http://ezydeal2u.com"
+  domain: "lvh.me:3000"
 
   # If you want to make logins work across different subdomains you should put here the domain where you are running Sharetribe.
   # practically in most cases the same value as in "domain:"
@@ -354,7 +354,7 @@ default: &default_settings
   # The hosted version stores the landing page data in the database but for single
   # marketplace OS installations the database doesn't bring any benifits. That's why
   # the static version is used instead of database in OS installations.
-  clp_static_enabled: true
+  clp_static_enabled: false
 
   # Landing page is cached heavily.
   #
@@ -440,7 +440,6 @@ production: &production_settings
   eager_load: true
 
   log_level: INFO
-  secret_key_base: 92c50f9175ce7023568323bb46a00de97902359ee589054280ad9c9d4e1ffdf8add4662af3f4eb3a6111b28abb7418861477b4dbc6e7d6a9c3caec7d41bd5009
 
 staging:
   <<: *production_settings
@@ -456,6 +455,8 @@ development:
 
   # Skip email confirmation
   skip_email_confirmation: true
+
+  secret_key_base: "fd1af50b59b5e27776941b3205f92aca0f704c2252225cf93e3d97ae53f4774d25736cbdb19c1580839a2f68e15009209227e966003f53932c1bcc5d65616948"
 
   log_level: DEBUG
 
@@ -504,5 +505,7 @@ test:
 
   # easier to run tests without SSL
   always_use_ssl: false
+
+  secret_key_base: "8fb582997a5e3ba2efb57c020dd01aa81647674dbb1aee6efcf30d75ec442e3a48832379e1ebaae2801782075efbf02ebed797a1df3f2b3ad87ec3faf37ccc64"
 
   log_level: DEBUG
